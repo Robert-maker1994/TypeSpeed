@@ -1,0 +1,245 @@
+* {
+	margin: 0;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Hina Mincho', sans-serif;
+}
+
+body {
+    padding:50px 0 0 0 ;
+	background: #493743;
+}
+
+/* Header */
+
+header {
+	width: 85%;
+	max-width: 1250px;
+	margin: 50px auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#logo {
+	height: 107px;
+	width: auto;
+}
+
+.portfolio {
+	text-align: right;
+	display: flex;
+	border: none;
+	background: none;
+    justify-content: flex-end;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	margin-right: 20px;
+}
+
+/* Hero */
+
+.hero {
+	text-align: center;
+}
+
+.hero h1 {
+	font-size: 2rem;
+	color: #DCD2C6;
+}
+
+.hero p {
+	font-size: 1.3rem;
+	color: #DCD2C6;
+}
+
+/* Content/Words */
+
+.words {
+	max-width: 900px;
+	min-width: 500px;
+	margin: auto;
+	align-items: center;
+	justify-content: left;
+	padding-top: 50px;
+	padding-bottom: 30px;
+	color: #F1A17E;
+	display: flex;
+	flex-wrap: wrap;
+	line-height: 1rem;
+}
+
+.current-word {
+	color: white;
+}
+
+.correct {
+	color: rgb(0, 199, 0);
+}
+
+.wrong {
+	color: rgb(255, 72, 0);
+}
+
+span {
+	padding: 0.5rem;
+	font-size: 1.3rem;
+}
+
+/* User controls */
+
+.ui {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 30px;
+}
+
+.typing-input {
+	padding: 10px;
+	border-radius: 5px;
+	border: 2px solid #F1A17E;
+	background: transparent;
+	color: #F1A17E;
+	font-size: 1.3rem;
+}
+
+.typing-end {
+	border: 2px solid #52585c;
+	transition: all 0.5s ease-in-out;
+}
+
+.seconds {
+	font-size: 1.3rem;
+	margin-left: 20px;
+	text-align: center;
+	align-self: center;
+	border-radius: 5px;
+	border: 2px solid #F1A17E;
+	color: #F1A17E;
+	padding: 10px;
+	pointer-events: none;
+}
+
+.timer {
+	display: flex;
+}
+
+.active-timer {
+	transition: all 0.5s ease-in-out;
+	color: #F1A17E;
+	border: 2px solid #F1A17E;
+}
+
+.redo-button {
+	margin-left: 20px;
+	padding: 10px 13px 10px 13px;
+	border: none;
+	border: 2px solid#A37A68;
+	background: none;
+	border-radius: 5px;
+	font-size: 15px;
+	color: #A37A68;
+}
+
+.redo-button:hover {
+	border: 2px solid #F1A17E;
+	color: #F1A17E;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+.redo-end {
+	border: 2px solid #F1A17E;
+	color: #F1A17E;
+	transition: all 0.5s ease-in-out;
+}
+
+.start-help {
+	color:#F1A17E;
+	font-size: 1.3rem;
+	text-align: center;
+	align-self: center;
+	transition: all 0.5s ease-in-out;
+}
+
+.end-help {
+	transition: all 0.5 ease-in-out;
+	opacity: 0;
+	pointer-events: none;
+}
+
+/* End results */
+
+.reveal {
+	border-radius: 5px;
+	margin-left: 25%;
+	margin-right: 25%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	opacity: 0;
+}
+
+.wpm {
+	text-align: center;
+	font-size: 1.5rem;
+	padding-bottom: 30px;
+	color: white;
+}
+
+.results {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 1.5rem;
+	color: white;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.finished {
+	opacity: 1;
+	transition: all 0.5s ease-in-out;
+}
+
+.correct-words {
+	padding-right: 4rem;
+}
+
+.incorrect-words {
+	padding-right: 4rem;
+}
+
+@media screen and (max-width: 1000px) {
+	body {
+		overflow-x: hidden;
+        padding: 5px;
+	}
+
+	#logo {
+		height: 90px;
+		width: auto;
+		margin-bottom: 25px;
+	}
+
+	.words {
+		max-width: 90%;
+		min-width: 250px;
+	}
+
+	.reveal {
+		width: 100%;
+		margin: 5px auto;
+	}
+
+	.results {
+		display: block;
+		text-align: left;
+		margin: 15px 15px;
+	}
+}
